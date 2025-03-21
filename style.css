@@ -1,0 +1,120 @@
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap&#39;); */
+
+:root {
+    --border-color: #1a4cd7;
+    --fill-color: #57a6f9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to top, #344b7b, #424b5f);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8rem;
+}
+
+h3{
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cup {
+    background-color: #fff;
+    border: 4px solid var(--border-color);
+    color: var(--border-color);
+    border-radius: 0 0 40px 40px;
+    height: 330px;
+    width: 150px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.cup.cup-small {
+    height: 90px;
+    width: 50px;
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cup.cup-small:hover {
+    transform: rotate(-12deg);
+}
+
+.cup.cup-small.full {
+    background-color: var(--fill-color);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.cups {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.remained {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.remained span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.percentage {
+    background-color: var(--fill-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 28px;
+    height: 0;
+    transition: height 0.3s ease;
+}
+
+.text {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 3rem;
+}
+
+#allCup{
+    display: flex;
+}
